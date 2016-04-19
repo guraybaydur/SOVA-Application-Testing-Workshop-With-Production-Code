@@ -15,9 +15,9 @@ namespace WebApp
             config.MapHttpAttributeRoutes();
 
             config.Routes.MapHttpRoute(
-                name: "DefaultApi",
-                routeTemplate: "api/{controller}/{id}",
-                defaults: new { id = RouteParameter.Optional }
+                name: "CategoryRoute",
+                routeTemplate: "api/categories/{id}",
+                defaults: new { controller="CAtegories", id = RouteParameter.Optional }
             );
         }
     }
